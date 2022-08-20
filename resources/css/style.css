@@ -111,3 +111,33 @@ section article img {
 section article p {
   align-self: center;
 }
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  border-top: 1px solid darkgray;
+  margin-top: 2rem;
+}
+
+footer p {
+  justify-self: start;
+  margin-left: 1rem;
+}
+
+footer .join-btn {
+  background-color: #4b648a;
+  font-size: 1.2rem;
+  padding: 0.25rem 0.5rem;
+  color: white;
+}
+
+footer ul {
+  display: flex;
+  font-size: 1.05rem;
+}
+
+footer ul li:nth-of-type(1) {
+  margin-right: 1rem;
+}
