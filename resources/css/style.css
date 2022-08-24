@@ -75,6 +75,10 @@ main {
   left: 25%;
 }
 
+.overlay h1 {
+  margin-bottom: 1rem;
+}
+
 .overlay a {
   color: #261e1a;
   background-color: #9497a0;
@@ -140,4 +144,42 @@ footer ul {
 
 footer ul li:nth-of-type(1) {
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .overlay {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .overlay {
+    font-size: 1.25rem;
+  }
+
+  .overlay h1 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    grid-template-columns: 1fr;
+    position: static;
+    justify-items: initial;
+    padding: 0;
+  }
+
+  header .logo,
+  header div {
+    display: none;
+  }
 }
