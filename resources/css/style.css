@@ -178,8 +178,61 @@ footer ul li:nth-of-type(1) {
     padding: 0;
   }
 
-  header .logo,
+  .logo {
+    justify-self: center;
+    align-self: center;
+    padding: 0.5rem;
+    padding-bottom: 0;
+  }
+
   header div {
     display: none;
+  }
+
+  main {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .overlay {
+    top: 10%;
+    left: 15%;
+  }
+
+  section {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  section article {
+    display: grid;
+    grid-template: repeat(2, 100%);
+  }
+
+  section article img {
+    width: 75%;
+    justify-self: center;
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    margin-top: 1rem;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0.5rem;
+  }
+
+  footer p {
+    justify-self: center;
+    margin-left: 0;
+  }
+
+  footer a {
+    margin: 0.7rem auto;
+  }
+
+  footer ul {
+    margin: 0;
+    padding: 0;
   }
 }
